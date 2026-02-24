@@ -99,3 +99,37 @@ nav {
     text-align: center;
     color: #666;
 }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    /* Stack the logo and buttons on top of each other */
+    .nav-container {
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+
+    /* Add space below the logo */
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    /* Allow buttons to wrap to the next line instead of shrinking */
+    .nav-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px; /* Adds space between buttons */
+    }
+
+    /* Adjust button sizes for touch screens */
+    .nav-buttons a {
+        margin-left: 0; /* Removes the desktop spacing */
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Add breathing room on the left and right of the main boxes */
+    .section {
+        margin: 20px 15px; 
+    }
+}
